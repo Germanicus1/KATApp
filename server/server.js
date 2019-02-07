@@ -25,6 +25,14 @@ app.post('/initiatives', (req, res) => {
 
 });
 
+app.get('/initiatives', (req, res) => {
+  Initiative.find().then((initiatives) => {
+    res.send({initiatives});
+    }, (e) => {
+      res.status(400).send(e);
+    });
+});
+
 app.listen('3000', () => {
   console.log('Server up and listening on port 3000');
 });
