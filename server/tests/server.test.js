@@ -4,34 +4,49 @@ const request = require('supertest');
 const {app} = require('../server');
 const {Initiative} = require('../models/initiative');
 
+const initiatives = [{
+  companyName: 'My first company',
+  initiativeName: 'My first initiative',
+  targetMaturityLevel: 1
+},
+{
+  companyName: 'My second company',
+  initiativeName: 'My second initiative',
+  targetMaturityLevel: 2
+}]
+
 beforeEach((done) => {
-  Initiative.deleteMany({}).then(() => done());
+  Initiative.deleteMany({}).then(() => {
+    return Initiative.insertMany(initiatives);
+  }).then(() => done());
 });
 
 describe('POST /initiatives', () => {
   it('Should create a new initiative', (done) => {
-    const companyName = 'My company';
-    const initiativeName = 'My initiative';
-    const targetMaturityLevel = 2;
+    const testInitative = {
+      companyName: 'My company',
+      initiativeName: 'My initiative',
+      targetMaturityLevel: 2
+    }
 
     request(app)
       .post('/initiatives')
-      .send({companyName, initiativeName, targetMaturityLevel})
+      .send(testInitative)
       .expect(200)
       .expect((res) => {
-        expect(res.body.companyName).toBe(companyName);
-        expect(res.body.initiativeName).toBe(initiativeName);
-        expect(res.body.targetMaturityLevel).toBe(targetMaturityLevel);
+        expect(res.body.companyName).toBe(testInitative.companyName);
+        expect(res.body.initiativeName).toBe(testInitative.initiativeName);
+        expect(res.body.targetMaturityLevel).toBe(testInitative.targetMaturityLevel);
       })
       .end((err, res) => {
         if(err) {
           return done(err);
         }
-        Initiative.find().then((initiatives) => {
+        Initiative.find(testInitative).then((initiatives) => {
           expect(initiatives.length).toBe(1);
-          expect(initiatives[0].companyName).toBe(companyName);
-          expect(initiatives[0].initiativeName).toBe(initiativeName);
-          expect(initiatives[0].targetMaturityLevel).toBe(targetMaturityLevel);
+          expect(initiatives[0].companyName).toBe(testInitative.companyName);
+          expect(initiatives[0].initiativeName).toBe(testInitative.initiativeName);
+          expect(initiatives[0].targetMaturityLevel).toBe(testInitative.targetMaturityLevel);
           done();
         }).catch((e) => done(e));
       });   
@@ -47,9 +62,21 @@ describe('POST /initiatives', () => {
           return done(err);
         }
         Initiative.find().then((initiatives) => {
-          expect(initiatives.length).toBe(0);
+          expect(initiatives.length).toBe(2);
           done();
         }).catch((e) => done());
       });
   })
+});
+
+describe('GET /initatives)', () => {
+  it('Should get all initiatives', (done) => {
+    request(app)
+      .get('/initiatives')
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.initiatives.length).toBe(2);
+      })
+      .end(done);
+  });
 });
