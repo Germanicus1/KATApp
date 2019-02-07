@@ -1,0 +1,62 @@
+{
+  "scale": {
+    "na": {
+      "value": "Not applicable",
+      "criteria": ""
+    },
+    "n": {
+      "value": "Not implemented",
+      "criteria": "The implementation of the specific practice is judged as not initiated although some initial ideas or isolated trials could exist. The intent of the general practice for the corresponding ML is judged as absent or inadequately addressed."
+      },
+    "p": {
+      "value": "Partially implemented / Basic / Initial",
+      "criteria": "The specific practice is implemented in several projects and services, however its application still needs to be strengthen to ensure that it is not abandoned. The scope of application has to be extended to more projects and services as well. The intent of the general practice for the corresponding ML is correctly addressed. Some issues in the practice implementation are identified which might threaten the accomplishment of the general practice's intent."
+      },
+    "f": {
+      "value": "Fully implemented / Stable",
+      "criteria": "The specific practice is implemented solidly in all or the large majority (>75%) of the projects and services. It is correctly understood, adapted to the organizational context and some improvements/revisions have been defined during the last 9-12 months. The intent of the general practice for the corresponding ML is fully achieved."
+    },
+    "o": {
+      "value": "Obleviated",
+      "criteria": "The practice is not in place any more because a more mature version of it is applied. E.g., per-person WIP limits are not used because activity-based WIP limits or CONWIP is used."
+    }
+  },
+
+  "breadth": {
+    "0": {
+      "value": "0",
+      "criteria": "No project or service uses the practice"
+    },
+    "1": {
+      "value": "1",
+      "criteria": "One third of the projects/servce use the practice"
+    },
+    "2": {
+      "value": "3",
+      "criteria": ""
+    },
+    "3": {
+      "value": "9",
+      "criteria": ""
+    }
+  },
+  
+  "adoption": {
+    "0": {
+      "value": "0",
+      "criteria": "Not applied, even if some intents have been made in the past."
+    },
+    "1": {
+      "value": "1",
+      "criteria": "Idea. Piloting / Just started"
+    },
+    "2": {
+      "value": "3",
+      "criteria": "Habit. Used for several months and well accepted"
+    },
+    "3": {
+      "value": "9",
+      "criteria": "Improved at least a couple of time during the last 9-12 months"
+    }
+  }
+}

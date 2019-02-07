@@ -1,0 +1,1164 @@
+{
+  "maturityLevels": [
+    {
+      "short": "ML0",
+      "longName": "Oblivious",
+      "risk": "Fragile",
+      "leanTPS": "Muri",
+      "leadership": "Individualism",
+      "focus": "Who we are",
+      "values": {
+        "transition": "",
+        "core": "Achievment"
+      },
+      "scale": {
+        "transition": "Individual",
+        "core": "Individual"
+      }
+    },
+    {
+      "short": "ML1",
+      "longName": "Emerging",
+      "risk": "Fragile",
+      "leanTPS": "Muri",
+      "leadership": "Individualism",
+      "focus": "Who we are",
+      "values": {
+        "transition": "Collaboration",
+        "core": "Transparency"
+      },
+      "scale": {
+        "transition": "Individual",
+        "core": "Team"
+      }
+    },
+    {
+      "short": "ML2",
+      "longName": "Defined",
+      "risk": "Fragile",
+      "leanTPS": "Muri",
+      "leadership": "Tribalism",
+      "focus": "Why we exist",
+      "values": {
+        "transition": "Flow",
+        "core": "Flow"
+      },
+      "scale": {
+        "transition": "Team",
+        "core": "Project/Service"
+      }
+    },
+    {
+      "short": "ML3",
+      "longName": "Managed",
+      "risk": "Resillient",
+      "leanTPS": "Mura",
+      "leadership": "Alignment, Unity, Shared purpose",
+      "focus": "Why we exist",
+      "values": {
+        "transition": "Agreement, Customer Service, Respect, Understanding",
+        "core": "Purpose, Balance, Leadership, Regulatory compliance"
+      },
+      "scale": {
+        "transition": "Project/Service",
+        "core": "Multiple Projects & Shared Services"
+      }
+    },
+    {
+      "short": "ML4",
+      "longName": "Quantatively Managed",
+      "risk": "Robust",
+      "leanTPS": "Muda",
+      "leadership": "Alignment, Unity, Shared purpose, Systems thinking",
+      "focus": "What we do",
+      "values": {
+        "transition": "Market focus, Short-term results",
+        "core": "Market focus, Short-term results"
+      },
+      "scale": {
+        "transition": "Multiple Projects & Shared Services",
+        "core": "Project/Product portfolio"
+      }
+    },
+    {
+      "short": "ML5",
+      "longName": "Optimizing",
+      "risk": "Robust",
+      "leanTPS": "Kaizen culture",
+      "leadership": "Alignment, Unity, Shared purpose, Systems thinking, Altrusive behaviour",
+      "focus": "How we do it",
+      "values": {
+        "transition": "Business focus, Long-term investment (patient capital), Experimentation",
+        "core": "Business focus, Long-term investment (patient capital), Experimentation"
+      },
+      "scale": {
+        "transition": "Project/Product portfolio",
+        "core": "Project/Product portfolio"
+      }
+    },
+    {
+      "short": "ML6",
+      "longName": "Congruent",
+      "risk": "Antifragile",
+      "leanTPS": "Hoshin Kanri",
+      "leadership": "Alignment, Unity, Shared purpose, Systems thinking, Altrusive behaviour, Contributor society",
+      "focus": "Challenge How, What, Why & Who",
+      "values": {
+        "transition": "Business survivability, Diversity, Tolerance",
+        "core": "Business survivability, Diversity, Tolerance"
+      },
+      "scale": {
+        "transition": "Business portfolio",
+        "core": "Business portfolio"
+      }
+    }
+  ],
+  "generalPractices": {
+    "VZ": {
+      "fullName": "Visualize",
+      "goals": "* To provide individuals, teams, and managers visibility on the work, the workflows, and the risks associated with it\n* To engage sensory perception and move people emotionally\n* To encourage greater empathy and create greater transparency\n* To enable collaboration, better communication, debate, challenge, and catalyze improvement\n* To facilitate decision making",
+      "benefits": "* Makes that which is invisible, visible\n* Ensures clear and correct communication of information about work items\n* Reduces overburdening by visualizing and limiting the work-in-progress to the capacity of the individuals that make up the kanban system\n* Develops a shared understanding of objectives, work status, impediments, and risks\n* Captures significant business risks associated with work items\n* Facilitates timely and coherent decision making, collaboration, and knowledge sharing\n* Develops trust\n* Reduces disruptions",
+      "levels": {
+        "ML0": {
+          "transition": {},
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Visualize basic work item related information on a ticket",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize individual's work by means of a Personal Kanban board",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Visualize work for several individuals by means of an Aggregated Personal Kanban board",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Visualize the work carried out by a team by means of a Team Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Use avatars to visualize individual's workload",
+                "evidence": ""
+              },
+              {
+                "description": "Initial policies visualized",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize team work by means of an Emergent Workflow Kanban board",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML2": {
+          "Transition": {
+            "specificPractices": [
+              {
+                "description": "Visualize work types by means of card colors or board rows",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize work items by means of a Delivery Kanban board with per-person WIP limits",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize options by means of Discovery Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize basic policies",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Ticket design: Visualize concurrent or unordered activities with checkboxes",
+                "evidence": ""
+              },
+              {
+                "description": "Board design: Visualize unordered activities using rows or vertical spaces",
+                "evidence": ""
+              },
+              {
+                "description": "Discovery/Delivery boards enhanced to visualize workflow",
+                "evidence": ""
+              },
+              {
+                "description": "Use CONWIP Emergent workflow Delivery Kanban board to provide greater flexibility in selection, scheduling and delivery of work",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize project progress on a Portfolio Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize defects and other rework types",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize blocked work items",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Visualize ready to commit status, also known as ready to pull",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize ready to pull criteria, also known as definition of ready, entry criteria",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize workflow and team work items by means of Aggregated Team Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize project work items on a Two-tiered  Project Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize parent-child and peer-peer dependencies ",
+                "evidence": ""
+              },
+              {
+                "description": "Use parking lot to visualize dependent work requests waiting or blocked",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize discarded options in a parking lot on an upstream/discovery Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Define work request abandonment policies and actively close upstream requests which meet the criteria",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Visualize upstream options by means of Upstream/Discovery Kanban board",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize replenishment signals ",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize pull signals ",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize pull criteria (also known as pull policies, definition of ready, exit criteria) ",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize available capacity",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize class of service using ticket colors, board rows or ticket decorators",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize work item aging",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize target date or SLA",
+                "evidence": ""
+              },
+              {
+                "description": "Use Earned Value Portfolio Kanban board to visualize project progress and schedule or budget risk",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize failure or aborted demand",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize aborted work",
+                "evidence": ""
+              }
+            ]            
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Visualize local cycle time ",
+                "evidence": ""
+              },
+              {
+                "description": "Use ticket decorators to indicate risks",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize risk classes with different swimlanes",
+                "evidence": ""
+              },
+              {
+                "description": "Visualize split & merge workflows",
+                "evidence": ""
+              }
+            ]            
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Visualize WIP limits on dependencies parking lot",
+                "evidence": ""
+              }
+            ]           
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Visualize fixed teams & floating workers (shared resources) across aggregated services",
+                "evidence": ""
+              }
+            ]            
+          }
+        },
+        "ML6":{}
+      }
+    },
+    "LW": {
+      "fullName": "Limit Work-in-Progress",
+      "goals": "* To relieve individuals, functions, and service delivery systems of overburdening\n* To discourage excessive and damaging multitasking\n* To encourage deferred commitment\n* To establish a pull system on part or all of the workflow\n* To catalyze the development of triage capability",
+      "benefits": "* Allows individuals and teams to focus on work valued by the customer\n* Makes the work flow through the kanban system\n* Mitigates the effects of unevenness in arrival rate and flow of work\n* Makes bottlenecks visible\n* Makes visible delays due to non-instant availability of shared resources\n* Amplifies the impact of blocking issues and encourages their early and swift\n* resolution\n* Improves value delivery rate, delivery times, and quality Improves predictability\n* Stimulates conversations about problems in the process\n* Fosters collaboration, causing people to work together on work items in order to\n* finish them and get free capacity for the kanban system\n* Facilitates achieving balance within and between kanban systems\n* Facilitates process understanding\n* Helps with reduction or elimination of three core types of waste: muri (overbur- dening), resulting in poor quality and rework; mura (unevenness), resulting in long and unpredictable lead times, encouraging early starts and more WIP, or incurring unanticipated (opportunity) cost of delay; and muda (non-value-adding activities), resulting in additional costs and potential delays",
+      "levels": {
+        "ML0": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Establish personal WIP limits",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Establish per-person WIP limits",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Establish team WIP limits",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML2": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Establish activity based WIP limits",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Establish CONWIP limits  on emergent workflow",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Use an order point (min limit) for upstream replenishment",
+                "evidence": ""
+              },
+              {
+                "description": "Use a max limit to define capacity",
+                "evidence": ""
+              },       
+              {
+                "description": "Bracket WIP limits for different states",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Limit WIP on dependency parking lot",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+            ]
+          }
+        },
+        "ML6": {
+          "transition": {
+            "specificPractices": [
+            ]
+          },
+          "core": {
+            "specificPractices": [
+            ]
+          }
+        }
+      }
+    },
+    "MF": {
+      "fullName": "Manage Flow",
+      "goals": "To achieve fast, smooth, and predictable creation and delivery of customer value, minimiz- ing risk and cost of delay.",
+      "benefits": "* Affords a deep understanding of the types of demand and how they are processed to deliver customer value\n* Identifies impediments in the workflow and defines how to eliminate them\n* Improves delivery predictability\n* Improves workflow efficiency\n* Establishes classes of service\n* Allows development of a quantitative understanding of the entire process and how to use it to manage better the capacity of the kanban systems, the workflow, and customer satisfaction\n* Improves forecasting\n* Improves risk management\n* Improves optionality by enabling ever-later deferral of commitment",
+      "levels": {
+        "ML0": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Define work types based on nature of tasks",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML2": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Define work types based on customer requests",
+                "evidence": ""
+              },
+              {
+                "description": "Map upstream and downstream flow",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Organize around the knowledge discovery process",
+                "evidence": ""
+              },
+              {
+                "description": "Defer commitment (_Last responsible moment_)",
+                "evidence": ""
+              },
+              {
+                "description": "Use CFD to monitor queues",
+                "evidence": ""
+              },
+              {
+                "description": "Use Little's law",
+                "evidence": ""
+              },
+              {
+                "description": "Gradually eliminate infinite buffers",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Develop triage discipline",
+                "evidence": ""
+              },       
+              {
+                "description": "Manage dependencies",
+                "evidence": ""
+              },       
+              {
+                "description": "Manage blocking issues",
+                "evidence": ""
+              },       
+              {
+                "description": "Manage aborted work items",
+                "evidence": ""
+              },       
+              {
+                "description": "Use classes of service to affect selection",
+                "evidence": ""
+              },       
+              {
+                "description": "Forecast Delivery",
+                "evidence": ""
+              },       
+              {
+                "description": "Apply qualitative Real Options Thinking",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Collect and report flow efficienc",
+                "evidence": ""
+              },
+              {
+                "description": "Use explicit buffers to smooth flow",
+                "evidence": ""
+              },
+              {
+                "description": "Split & merge workflow",
+                "evidence": ""
+              },
+              {
+                "description": "Use two-phase commit for Delivery commitment",
+                "evidence": ""
+              },
+              {
+                "description": "Analyze to anticipate dependences",
+                "evidence": ""
+              },
+              {
+                "description": "Establish refutable vs irrefutable demand",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Manage reduction of transaction & coordination costs",
+                "evidence": ""
+              },
+              {
+                "description": "Determine reference class data set",
+                "evidence": ""
+              },
+              {
+                "description": "Forecast using reference classes, Monte Carlo simulations & other models",
+                "evidence": ""
+              },
+              {
+                "description": "Allocate capacity across swimlanes",
+                "evidence": ""
+              },
+              {
+                "description": "Allocate capacity by color of work item",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Utilize hybrid fixed service teams together with a flexible labor pool",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML6": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        }
+      }
+    },
+    "XP": {
+      "fullName": "Make Policies Explicit",
+      "goals": "Establish clear rules for managing work that allow for developing a better understanding of the entire process and improving it further with consensus.",
+      "benefits": "\n* Establishes explicit criteria for making decisions related to work items and process • Establishes criteria and guidelines for managing risks\n* Manages dependencies\n* Aligns strategy and capability",
+      "levels": {
+        "ML0": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Define personal Kanban policies",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Define initial team policies",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML2": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Define/ Seeing service",
+                "evidence": ""
+              },    
+              {
+                "description": "Elaborate further policies",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Establish explicit purpose of metrics",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Establish pull criteria",
+                "evidence": ""
+              },
+              {
+                "description": "Establish replenishment commitment point",
+                "evidence": ""
+              },
+              {
+                "description": "Establish delivery commitment point",
+                "evidence": ""
+              },
+              {
+                "description": "Established customer acceptance criteria for each work item or a class of work items",
+                "evidence": ""
+              },
+              {
+                "description": "Define classes of service",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Fitness for purpose explicitly defined and managed based on metrics/ quantitatively",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Establish demand shaping policies",
+                "evidence": ""
+              },
+              {
+                "description": "Use statistical methods for quantitative decision making",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Align Strategy & Capability",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML6": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        }
+      }
+    },
+    "FL": {
+      "fullName": "Feedback Loops",
+      "goals": "Enable comparing expected and actual outcome and use the obtained feedback to evolve further the process and the policies.",
+      "benefits": "* Establishes coherent management of the entire process\n* Develops unity, alignment, and shared purpose\n* Develops short-term shareholder focus\n* Develops long-term shareholder focus",
+      "levels": {
+        "ML0": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Make personal reflection",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Conduct Kanban meeting",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML2": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Conduct internal team replenishment meeting",
+                "evidence": ""
+              },    
+              {
+                "description": "Make team Retrospective",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Make suggestion box review",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Conduct replenishment meeting",
+                "evidence": ""
+              },
+              {
+                "description": "Conduct delivery planning meeting",
+                "evidence": ""
+              },
+              {
+                "description": "Conduct risk review",
+                "evidence": ""
+              },
+              {
+                "description": "Conduct service delivery review",
+                "evidence": ""
+              },
+              {
+                "description": "Conduct options review (upstream)",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Conduct portfolio review",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Make appropriate use of forecasting",
+                "evidence": ""
+              },
+              {
+                "description": "Assess forecasting models for robustness",
+                "evidence": ""
+              },
+              {
+                "description": "Consuct operations review",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Conducy strategy review",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML6": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        }
+      }
+    },
+    "IE": {
+      "fullName": "Improve & Evolve",
+      "goals": "Build a shared comprehension of the purpose, process, and associated problems; suggest improvement actions based on scientific models; and reach agreement by consensus in order to evolve continually.",
+      "benefits": "\n* Learn in the process of defining an improvement experiment — predict the outcome — compare actual and expected results\n* Understand the impact of taken decisions\n* Improve risk management at all organizational level",
+      "levels": {
+        "ML0": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML1": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML2": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Identify problematic policies",
+                "evidence": ""
+              },
+              {
+                "description": "Identify sources of dissatisfaction",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML3": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Suggest improvements using a suggestion box",
+                "evidence": ""
+              },
+              {
+                "description": "Identify sources of delay",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Analyze blocker likeli-hood & impact",
+                "evidence": ""
+              },
+              {
+                "description": "Analyze Lead time tail risk",
+                "evidence": ""
+              },
+              {
+                "description": "After-meetings: Discuss a problem spontaneously - bring it to the service delivery review",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML4": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "Correctly classify common & special cause for process performance variation and take action appropriately",
+                "evidence": ""
+              },
+              {
+                "description": "Develop qualitative un-derstanding of common vs special cause for process performace variation",
+                "evidence": ""
+              }
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "Identify impact of shared resources",
+                "evidence": ""
+              },
+              {
+                "description": "Identify bottleneck and resolve it",
+                "evidence": ""
+              },
+              {
+                "description": "Identify transaction & coordination costs",
+                "evidence": ""
+              },
+              {
+                "description": "Develop quantitative understanding of common vs chance cause for process performance variation",
+                "evidence": ""
+              }
+            ]
+          }
+        },
+        "ML5": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "After-meetings: Discuss - Suggest - Take actions - Seek foregiveness",
+                "evidence": ""
+              }         
+            ]
+          }
+        },
+        "ML6": {
+          "transition": {
+            "specificPractices": [
+              {
+                "description": "",
+                "evidence": ""
+              }         
+            ]
+          },
+          "core": {
+            "specificPractices": [
+              {
+                "description": "After-meetings: Take  congruent actions with confidence",
+                "evidence": ""
+              }         
+            ]
+          }
+        }
+      }
+    }
+  }
+}
