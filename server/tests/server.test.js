@@ -1,15 +1,18 @@
 const expect = require('expect');
 const request = require('supertest');
+const {ObjectID} = require('mongodb');
 
 const {app} = require('../server');
 const {Initiative} = require('../models/initiative');
 
 const initiatives = [{
+  _id: new ObjectID(),
   companyName: 'My first company',
   initiativeName: 'My first initiative',
   targetMaturityLevel: 1
 },
 {
+  _id: new ObjectID(),
   companyName: 'My second company',
   initiativeName: 'My second initiative',
   targetMaturityLevel: 2
@@ -79,4 +82,32 @@ describe('GET /initatives)', () => {
       })
       .end(done);
   });
+});
+
+describe('GET /initiatives/:id', () => {
+  it('Should get an individual initiative', (done) => {
+    request(app)
+      .get(`/initiatives/${initiatives[0]._id.toHexString()}`)
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.initiative.companyName).toBe(initiatives[0].companyName);
+      })
+      .end(done);
+  });
+
+  it('Should return 404 if initiative not found', (done) => {
+    id = new ObjectID();
+    request(app)
+      .get(`/initiatives/${id.toHexString()}`)
+      .expect(404)
+      .end(done);
+  });
+
+  it('Should return 400 if ObjectID not valid', (done) => {
+    request(app)
+      .get('/initiatives/123')
+      .expect(400)
+      .end(done);
+  })
+
 });
