@@ -56,4 +56,24 @@ app.listen(port, () => {
   console.log(`Server up and listening on port ${port}`);
 });
 
+// DELETE /initiative
+
+app.delete('/initiatives/:id', (req, res) => {
+  const id = req.params.id;
+
+  if(!ObjectID.isValid(id)) {
+    return res.status(400).send({});
+  }
+
+  Initiative.findByIdAndDelete(id).then((initiative) => {
+    if(!initiative) {
+      return res.status(404).send({});
+    }
+    res.status(200).send({initiative});
+  }).catch((e) => {
+    res.status(400).send({});
+  });
+});
+
+
 module.exports = {app};
