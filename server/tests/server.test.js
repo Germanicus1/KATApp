@@ -107,7 +107,44 @@ describe('GET /initiatives/:id', () => {
     request(app)
       .get('/initiatives/123')
       .expect(400)
-      .end(done);
+      .end(done)
   })
 
+});
+
+describe('DELETE /initiatives/:id', () => {
+  it('Should delete a single initiative by its ID', (done) => {
+    id = initiatives[1]._id.toHexString();
+
+    request(app)
+      .delete(`/initiatives/${id}`)
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.initiative._id).toBe(id);
+      })
+      .end((err, res) => {
+        if(err) {
+          return done(err);
+        }
+        Initiative.findById(id).then((intiative) => {
+          expect(intiative).toNotExist();
+          done();
+        }).catch((e) => done());
+      });
+  });
+
+  it('Should return 404 if initiative not found', (done) => {
+    id = new ObjectID();
+    request(app)
+      .delete(`/initiatives/${id.toHexString()}`)
+      .expect(404)
+      .end(done);
+  });
+
+  it('Should return 400 if ObjectID not valid', (done) => {
+    request(app)
+      .delete('/initiatives/123')
+      .expect(400)
+      .end(done)
+  })
 });

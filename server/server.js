@@ -75,5 +75,4 @@ app.delete('/initiatives/:id', (req, res) => {
   });
 });
 
-
 module.exports = {app};
