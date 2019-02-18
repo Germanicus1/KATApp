@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/server.js",
-    "test": "mocha server/**/*.test.js",
+    "test": "mocha test/**/*Spec.js",
     "test-watch": "nodemon --exec 'npm test'"
   },
   "engines": {
@@ -14,10 +14,13 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "esm": "^3.2.4",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "mongodb": "^3.1.13",
-    "mongoose": "^5.4.10"
+    "mongoose": "^5.4.10",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
   },
   "devDependencies": {
     "expect": "^24.1.0",

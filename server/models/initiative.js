@@ -32,6 +32,10 @@ let Initiative = mongoose.model('Initiative', {
   active: {
     type: Boolean,
     default: true
+  },
+  lastUpdate: {
+    type: Number,
+    default: null
   }
 });
 

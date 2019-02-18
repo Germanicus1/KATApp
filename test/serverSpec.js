@@ -2,20 +2,24 @@ const expect = require('expect');
 const request = require('supertest');
 const {ObjectID} = require('mongodb');
 
-const {app} = require('../server');
-const {Initiative} = require('../models/initiative');
+let {app} = require('../server/server');
+const {Initiative} = require('../server/models/initiative');
+
+
 
 const initiatives = [{
   _id: new ObjectID(),
   companyName: 'My first company',
   initiativeName: 'My first initiative',
-  targetMaturityLevel: 1
+  targetMaturityLevel: 1,
+  lastUpdate: new Date().getTime()
 },
 {
   _id: new ObjectID(),
   companyName: 'My second company',
   initiativeName: 'My second initiative',
-  targetMaturityLevel: 2
+  targetMaturityLevel: 2,
+  lastUpdate: new Date().getTime()
 }]
 
 beforeEach((done) => {
@@ -35,7 +39,7 @@ describe('POST /initiatives', () => {
     request(app)
       .post('/initiatives')
       .send(testInitative)
-      .expect(200)
+      .expect(200) 
       .expect((res) => {
         expect(res.body.companyName).toBe(testInitative.companyName);
         expect(res.body.initiativeName).toBe(testInitative.initiativeName);
@@ -148,3 +152,53 @@ describe('DELETE /initiatives/:id', () => {
       .end(done)
   })
 });
+
+describe('PATCH /initiatives/:id', () => {
+  it('Should return the updated initiative', (done) => {
+    id = initiatives[0]._id.toHexString();
+    bodyPick = {
+      companyName: 'My first company (edited)',
+      initiativeName: 'My first initiative (edited)'
+    };
+
+    request(app)
+      .patch(`/initiatives/${id}`)
+      .send(bodyPick)
+      .expect((res) => {
+        console.log(res.body);
+        expect(typeof res.body).toBe('object');
+        expect(res.body.initiative.companyName).toBe(bodyPick.companyName);
+        expect(res.body.initiative.initiativeName).toBe(bodyPick.initiativeName);
+      })
+      .expect(200)
+      .end(done)
+  });
+
+  it('Should return 404 if initative is not found', (done) => {
+    id = new ObjectID();
+    request(app)
+      .get(`/initiatives/${id.toHexString()}`)
+      .expect(404)
+      .end(done);
+  });
+
+  it('Should ignore if the user tries to edit the lastUpdatefield', (done) => {
+    id = initiatives[0]._id.toHexString(); 
+    // console.log(id);
+    const newInitiative = {
+      companyName: 'My first company (edited)',
+      initiativeName: 'My first initiative (edited)',
+      lastUpdate: 124
+    };
+
+    request(app)
+      .patch(`/initiatives/${id}`)
+      .send(newInitiative)
+      .expect(200)
+      .expect((res) => {
+        res.body.initiative 
+        expect(res.body.initiative.lastUpdate).not.toBe(123);
+      })
+      .end(done);
+  });
+})
